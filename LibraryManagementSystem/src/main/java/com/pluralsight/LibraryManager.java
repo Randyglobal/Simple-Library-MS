@@ -94,6 +94,24 @@ public class LibraryManager {
                 display(book.displayBookInfo());
             }
     }
+//    Delete method
+    public void deleteBook(){
+        display("Please enter SN of corresponding book to delete");
+        String toDelete = scanner.nextLine();
+        boolean delete = true;
+        for (int i = 0; i < bookList.size(); i++) {
+            Book book = bookList.get(i);
+            if (book.getSerialNumber().equalsIgnoreCase(toDelete)){
+                bookList.remove(i);
+                display("The book with SN " + toDelete + " has been deleted");
+                delete = true;
+                break;
+            }
+        }
+        if (!delete){
+            display("Book with entered SN does not exist");
+        }
+    }
 
 //     Commented
      public void writeInFile(){

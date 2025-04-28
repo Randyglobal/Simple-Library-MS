@@ -25,7 +25,8 @@ public class MainApp {
             display(" 3 - Display by Serial Number");
             display(" 4 - Check Available Books");
             display(" 5 - Check Unavailable Books");
-            display(" 6 - Exit App");
+            display(" 6 - Delete Book");
+            display(" 7 - Exit App");
             int res = scanner.nextInt();
             switch (res) {
                 case 1:
@@ -44,6 +45,9 @@ public class MainApp {
                     libraryStore.notAvailableBooks();
                     break;
                 case 6:
+                    libraryStore.deleteBook();
+                    break;
+                case 7:
                     displaySreen = false;
                     return;
                 default:
