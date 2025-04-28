@@ -1,0 +1,1 @@
+[Books{title='The Lion King', author='Randy Imbia', serialNumber='GH37', availability=true}, Books{title='Blue Lagoon', author='Camille Ingram', serialNumber='GH673', availability=true}, Books{title='The Moon Rise', author='Craig McKeachie', serialNumber='HJYE2', availability=false}]
